@@ -15,12 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/','home');
 Route::view('register','register');
-Route::view('list','list');
 Route::view('about','about');
-
-
 Route::post('register','StudentsController@store');
 Route::get('list','StudentsController@list');
-
-
-//Route::get('/register','StudentsController@list');

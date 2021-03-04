@@ -28,6 +28,13 @@ class CreateStudentsTable extends Migration
             $table->string('status');
             $table->timestamps();
         });
+
+        Schema::create('articles', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->string('content');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -38,5 +45,6 @@ class CreateStudentsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('students');
+        Schema::dropIfExists('articles');
     }
 }

@@ -2,7 +2,7 @@
 @section('content')
 <h2>REGISTRATION PAGE</h2>
 <hr>
-<form action="/register" method="POST">
+<form action="register" method="POST">
     @csrf
     <div class="form-group">
         <input type="text" class="form-control @error('firstname') is-invalid @enderror" name="firstname" placeholder="Firstname">
