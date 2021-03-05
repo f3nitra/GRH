@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','home');
+
+
+//Route::view('/','home');
 Route::view('register','register');
 Route::view('about','about');
+
 Route::post('register','StudentsController@store');
 Route::get('list','StudentsController@list');
+
+
+Route::view('articles','articles');
+
+Route::post('articles','ArticlesController@store');
+Route::get('/','ArticlesController@list');
