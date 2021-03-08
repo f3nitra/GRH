@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+        <link rel="stylesheet" href="/css/main.css">
+        <title>GRH</title>
 
         <!-- Fonts -->
         <link href="https://bootswatch.com/4/lumen/bootstrap.min.css" rel="stylesheet">

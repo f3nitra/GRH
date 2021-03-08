@@ -3,17 +3,14 @@
 @section('content')
 <h1>WELCOME</h1>
 <hr>
-<div class="jumbotron">
-    @foreach($articles as $article)
-    <h1 class="display-3">{{ $article->title }}</h1>
-    <p class="lead">{{ $article->content }}</p>
-    <hr class="my-4">
-    <em>Written by {{ $article->author }}</em>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
-    @endforeach
-
-  </div>
+@foreach($articles as $article)
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header"><h2>{{ $article->title }}</h2></div>
+        <div class="card-body">
+        <h4 class="card-title">By {{ $article->author }}</h4>
+        <p class="card-text">{{ $article->content }}</p>
+        </div>
+    </div>
+@endforeach
 
 @endsection
